@@ -1,0 +1,102 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #edf2ff;
+  color: #495057;
+  font-weight: 400;
+}
+
+.todo-app {
+  max-width: 50rem;
+  margin: auto;
+  padding-top: 10%;
+}
+.todo-show {
+  background-color: #fff;
+  padding: 2rem;
+}
+.todo-top {
+  display: flex;
+  gap: 5px;
+}
+.main-top {
+  padding: 1.2rem;
+  border-bottom: 2px solid #0000e6;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+.todo-header {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 7px;
+  align-self: center;
+}
+.todo-input-text {
+  width: 29.5rem;
+  padding: 1.3rem;
+  border: 2px solid #ccc;
+}
+.todo-input-text:focus {
+  outline: none;
+}
+
+.btn {
+  border: none;
+  padding: 1rem;
+  background-color: #0000e6;
+  color: #edf2ff;
+  font-weight: 700;
+  font-size: 1.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.message {
+  color: #ff0000;
+  font-size: 1.5rem;
+  align-self: flex-start;
+}
+
+.todo-add-box {
+  margin-top: 1.2rem;
+}
+
+.todo-lists {
+  list-style: none;
+  margin: 10px;
+}
+.todo-list {
+  margin-bottom: 5px;
+  padding: 1rem;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.todo-list:nth-child(even) {
+  background-color: #ddd;
+}
+.todo-list:nth-child(odd) {
+  background-color: #eee;
+}
+.list-item {
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+.del-icon {
+  font-size: 3rem;
+  color: #ff0000;
+}
+.hidden {
+  display: none;
+}
