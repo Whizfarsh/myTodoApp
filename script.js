@@ -19,6 +19,11 @@ function newElement() {
   let spEl = document.createTextNode(`\u00D7`);
   span.appendChild(spEl);
 
+  let openSpan = document.createElement('span');
+  openSpan.className = 'done-icon';
+  let openSpanEl = document.createTextNode(`\u2713`);
+  openSpan.appendChild(openSpanEl);
+
   //checking if the input value is empty or not
   if (inputValue === '') {
     //if the input value is empty
@@ -28,6 +33,7 @@ function newElement() {
     //if the input value is not empty then execute
     document.querySelector('.todo-lists').appendChild(li).appendChild(p);
     document.querySelector('.todo-lists').appendChild(li).appendChild(span);
+    document.querySelector('.todo-lists').appendChild(li).appendChild(openSpan);
     document.querySelector('.message').textContent = '';
   }
 
