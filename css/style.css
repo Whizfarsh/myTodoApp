@@ -93,7 +93,8 @@ body {
   font-size: 2rem;
   text-transform: capitalize;
 }
-.del-icon {
+.del-icon,
+.done-icon {
   font-size: 3rem;
   color: #ff0000;
   cursor: pointer;
