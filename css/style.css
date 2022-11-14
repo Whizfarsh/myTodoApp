@@ -96,6 +96,7 @@ body {
 .del-icon {
   font-size: 3rem;
   color: #ff0000;
+  cursor: pointer;
 }
 .hidden {
   display: none;
