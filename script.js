@@ -1,6 +1,7 @@
 'use strict';
 
 let close = document.getElementsByClassName('del-icon');
+let done = document.getElementsByClassName('done-icon');
 
 function newElement() {
   let li = document.createElement('li');
@@ -32,8 +33,8 @@ function newElement() {
   } else {
     //if the input value is not empty then execute
     document.querySelector('.todo-lists').appendChild(li).appendChild(p);
-    document.querySelector('.todo-lists').appendChild(li).appendChild(span);
     document.querySelector('.todo-lists').appendChild(li).appendChild(openSpan);
+    document.querySelector('.todo-lists').appendChild(li).appendChild(span);
     document.querySelector('.message').textContent = '';
   }
 
@@ -48,6 +49,17 @@ function newElement() {
       });
     }
     removeTodo();
+  }
+
+  //for checking the list
+  for (let i = 0; i < done.length; i++) {
+    function checkList() {
+      done[i].addEventListener('click', function () {
+        let doneList = this.previousElementSibling;
+        doneList.classList.add('checked');
+      });
+    }
+    checkList();
   }
 }
 

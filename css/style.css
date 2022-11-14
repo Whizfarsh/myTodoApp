@@ -77,34 +77,40 @@ body {
 }
 .todo-list {
   margin-bottom: 5px;
-  padding: 1rem;
+
   height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-grow: 2;
 }
-.todo-list:nth-child(even) {
+.todo-list {
   background-color: #ddd;
-}
-.todo-list:nth-child(odd) {
-  background-color: #eee;
 }
 .list-item {
   font-size: 2rem;
   text-transform: capitalize;
+  padding: 1rem;
 }
 .del-icon {
   font-size: 3rem;
   color: #ff0000;
   cursor: pointer;
-  margin-left: auto;
+  margin-left: 2px;
+  background-color: #eee;
+  padding: 1rem;
 }
 .done-icon {
-  font-size: 3rem;
+  font-size: 2.8rem;
   color: #003b14;
   cursor: pointer;
-  margin-left: 1rem;
+  margin-left: auto;
+  background-color: #eee;
+  padding: 1rem;
 }
 .hidden {
   display: none;
+}
+.checked {
+  text-decoration: line-through;
 }
