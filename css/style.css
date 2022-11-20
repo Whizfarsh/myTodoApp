@@ -116,7 +116,7 @@ body {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 25rem) {
+@media (max-width: 31.3rem) {
   .todo-top {
     flex-direction: column;
     justify-content: center;
